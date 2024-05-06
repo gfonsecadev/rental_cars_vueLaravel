@@ -1,6 +1,6 @@
 <template>
   <div>
-    <table class="table table-hover">
+    <table class="table table-hover table-secondary">
       <thead>
         <tr>
           <th
@@ -147,5 +147,9 @@ function updateApiData(dataIncomplete) {
 }
 </script>
 
-<style>
+<style scoped>
+table{
+    background: linear-gradient(to left , rgb(48, 48, 48), #565656);
+}
+
 </style>

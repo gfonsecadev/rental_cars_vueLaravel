@@ -94,4 +94,8 @@ const dataInLabel = computed(() => {
 </script>
 
 <style>
+.modal-content{
+    background: linear-gradient(to left , rgb(93, 91, 91), #999797);
+    color: rgb(39, 33, 33);
+}
 </style>

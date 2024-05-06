@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card ">
-                <div class="card-header">Olá, {{props.userName}} !</div>
+                <div class="card-header"><strong>Olá, {{props.userName}} !</strong></div>
                 <div class="card-body text-center">
                   <h3 > Bem vindo a RentalCars Brasil.</h3>
                   <p >Aqui você encontra o veiculo que precisa</p>

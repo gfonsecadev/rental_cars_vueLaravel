@@ -43,7 +43,7 @@
       data-bs-target="#carouselExampleControlsNoTouching"
       data-bs-slide="prev"
     >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button
@@ -52,7 +52,7 @@
       data-bs-target="#carouselExampleControlsNoTouching"
       data-bs-slide="next"
     >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
@@ -60,7 +60,7 @@
 
 <script setup>
 import { useFetchApi } from "../composables/searchApi";
-const urlApi = "http://127.0.0.1:8000/api/v1/model_car?relationship=name,image";
+const urlApi = "http://127.0.0.1:8000/api/v1/model_car?all";
 //contém os dados para popular o carousel
 const { dataApi } = await useFetchApi(urlApi);
 
@@ -97,4 +97,6 @@ function convert(data) {
   margin: auto;
   font-size: 1rem;
 }
+
+
 </style>

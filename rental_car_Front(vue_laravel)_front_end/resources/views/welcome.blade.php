@@ -7,24 +7,36 @@
 
     <title>RentalCars</title>
     <style>
-        .measurement{
+        .measurement {
             height: 80vh;
             width: 100vw;
         }
-        @media(min-width: 600px){
-            .carousel-item>img{
-               height: 110vh;
-               width: 80vw;
+
+        @media(min-width: 600px) {
+            .carousel-item>img {
+                height: 100vh;
+                width: 80vw;
             }
 
-            .carousel-item img{
+            .carousel-item img {
                 box-shadow: 0 0 5px 2px rgb(43, 41, 41);
             }
 
-            .carousel-caption{
+            .carousel-caption {
                 text-shadow: black 0.1em 0.1em 0.2em
             }
         }
+
+        @media(max-width:450px) {
+            * {
+                font-size: 12px;
+            }
+
+
+                .carousel-item>img {
+                    height: 65vh;
+                }
+            }
     </style>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -60,7 +72,7 @@
 
                             @auth
                                 <li class="nav-item">
-                                    <a href="{{ url('/dashboard') }}" class="nav-link">
+                                    <a href="{{ url('/home') }}" class="nav-link">
                                         Página Principal
                                     </a>
                                 </li>
@@ -132,16 +144,7 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
         </div>
     </main>
 
@@ -177,7 +180,8 @@
                 </ul>
             </div>
         </div>
-        <small class="d-block text-center text-secondary">Copyright © 2024 GILMAR ALBERTO FONSECA. Todos os direitos reservados. </small>
+        <small class="d-block text-center text-secondary">Copyright © 2024 GILMAR ALBERTO FONSECA. Todos os direitos
+            reservados. </small>
 
     </footer>
 

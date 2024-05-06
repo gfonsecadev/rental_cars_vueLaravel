@@ -95,3 +95,11 @@ import { reactive, ref } from "vue"
                        })
     }
 </script>
+
+<style>
+@media(max-width:450px){
+*{
+    font-size: 12px;
+}
+}
+</style>

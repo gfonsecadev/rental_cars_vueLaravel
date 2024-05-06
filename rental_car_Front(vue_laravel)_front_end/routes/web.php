@@ -23,6 +23,9 @@ Route::middleware("auth")->group(function(){
     Route::get('/car', function(){
         return view(("mainContent.car"));
     })->name('car');
+    Route::get('/about', function(){
+        return view(("mainContent.about"));
+    })->name('about');
 });
 
 

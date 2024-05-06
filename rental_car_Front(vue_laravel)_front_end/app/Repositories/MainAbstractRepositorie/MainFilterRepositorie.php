@@ -37,9 +37,9 @@ abstract class MainFilterRepositorie{
 
 
     }
-    //mostra todos os registros sem paginação
+    //mostra todos os registros sem paginação com o relacionamento
     public function allWhitoutPagination(){
-        return $this->model->get();
+        return $this->model->with('brand')->get();
     }
 
     //retorna o objeto final das operações feitas acima

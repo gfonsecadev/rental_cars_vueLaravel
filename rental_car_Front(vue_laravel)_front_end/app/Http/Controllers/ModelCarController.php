@@ -44,6 +44,7 @@ class ModelCarController extends Controller
         }
 
         //traz todos os dados sem paginação
+        //vai ser utilizado para exibição dos carros formados entre a relação brand e model
         if ($request->has("all")) {
             return $modelFilter->allWhitoutPagination();
         }

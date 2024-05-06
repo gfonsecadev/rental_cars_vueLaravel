@@ -42,7 +42,7 @@
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav me-auto">
                             @auth
-                                <li class="nav-item"><a class="nav-link" href="#">Clientes</a></li>
+                                <li class="nav-item"><a class="nav-link disabled"  href="#">Clientes</a></li>
                                 <li class="nav-item"><a href="{{ route('car')}}" class="nav-link">Carros</a>  </li>
 
                                 <li class="nav-item dropdown">
@@ -54,7 +54,7 @@
                                         <a href="{{ route('model') }}" class="dropdown-item">Modelos</a>
                                     </div>
                                 </li>
-                                <li class="nav-item"><a href="{{ route('car')}}" class="nav-link">Fale conosco</a>  </li>
+                                <li class="nav-item"><a href="{{ route('about')}}" class="nav-link">Informações</a>  </li>
                             @endauth
                         </ul>
 
@@ -107,6 +107,7 @@
                 </nav>
             @endauth
         </header>
+
         <main class="py-4">
             @yield('content')
         </main>

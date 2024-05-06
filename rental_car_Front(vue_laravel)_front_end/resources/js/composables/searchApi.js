@@ -14,6 +14,7 @@ export async function useFetchApi(url) {
         //ou ok.data.data quando paginado ou ok.data quando tudo de uma vez
         dataApi.data = ok.data.data ?? ok.data
         dataApi.configPag = ok.data.links;
+        console.log(dataApi.data,url)
     }).catch((x) => error.value = x);
 
 
